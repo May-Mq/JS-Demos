@@ -8,12 +8,21 @@ var h=today.getHours()
 var m=today.getMinutes()
 var s=today.getSeconds()
 // add a zero in front of numbers<10
+h=checkHour(h)
 m=checkTime(m)
 s=checkTime(s)
 document.getElementById('txt').innerHTML=h+":"+m+":"+s
 t=setTimeout('startTime()',500)
 }
-
+function checkHour(i)
+{
+	if (i>=12) {
+		i=i-12
+		return "pm"+i
+	}else{
+		return "am"+i
+	}
+}
 function checkTime(i)
 {
 if (i<10) 

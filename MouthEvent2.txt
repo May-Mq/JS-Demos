@@ -1,0 +1,27 @@
+<!DOCTYPE >
+<html>
+<head>
+<script type="text/javascript">
+function mouseOver()
+{
+document.getElementById("p1").innerHTML = "点击头像跳转至浙江工商大学";
+document.getElementById("tup").style.width="384px";
+document.getElementById("tup").style.height="384px";
+}
+function mouseOut()
+{
+document.getElementById("p1").innerHTML = "";
+document.getElementById("tup").style.width="256px";
+document.getElementById("tup").style.height="256px";
+}
+</script>
+</head>
+
+<body style="text-align:center">
+<br>
+<p style="font-weight:bold">请将鼠标移到头像上</p>
+<br>
+<a href="http://www.hzic.edu.cn/"><img style="cursor:pointer" id="tup" src="imgs/eg_mouse.png" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="http://www.hzic.edu.cn/" /></a>
+<p style="cursor:pointer" id="p1"></p>
+</body>
+</html>
