@@ -1,20 +1,20 @@
-����Ŀ�е������ļ���������һЩ�޸ģ��������¡�
+对项目中的三个文件各自做出一些修改，具体如下。
 
-mouseEvent.html�޸ģ��������ͷ���Ϻ�ͷ��ͼƬ���150%�����ͼƬ����ת���㽭���̴�ѧ��ҳ��
+mouseEvent.html修改：鼠标移至头像上后，头像图片变大150%；点击图片后，跳转至浙江工商大学主页。
 
-clock.html�޸ģ���24Сʱʱ�ӣ��ĳ�12Сʱʱ�ӣ�Сʱ��ΧΪ0 - 12����am/pm����������/���磩��
+clock.html修改：将24小时时钟，改成12小时时钟（小时范围为0 - 12，用am/pm来区分上午/下午）。
 
-counter.html�޸ģ�������ʼ��ʱ���͡�ֹͣ��ʱ�����ܺϲ���һ����ť�ϡ�����ҳ�ϸ�ֻ��һ����ť����ť�����ֳ�ʼΪ����ʼ��ʱ���������ʼ��ʱ������ͬʱ��ť�����ֱ�ɡ�ֹͣ��ʱ�����ڴ�״̬�£������ť����ʱֹͣ���ֹ��㣬ͬʱ��ť�����ֱ�ɡ���ʼ��ʱ����
-
-
+counter.html修改：将“开始计时”和“停止计时”功能合并到一个按钮上。即网页上个只有一个按钮，按钮内文字初始为“开始计时”，点击后开始计时走数，同时按钮内文字变成“停止计时”；在此状态下，点击按钮，计时停止数字归零，同时按钮内文字变成“开始计时”。
 
 
 
 
-4λͬѧΪһ�������ɣ�����Aͬѧ�������pull request��BCD��λͬѧforkAͬѧ�Ĳֿ⣬Ȼ������޸�����ĳһ���ļ����޸����Ժ���Aͬѧ�ύpull request��ԭ���ϣ�Aͬѧ�ڴ���pull request��ʱ����Ҫ����ύ�ߵ��޸��Ƿ���ȷ��ֻ������ȷ�ĸ��ġ�
+
+
+4位同学为一组合作完成，其中A同学负责管理pull request，BCD三位同学forkA同学的仓库，然后各自修改以上某一个文件，修改完以后向A同学提交pull request。原则上，A同学在处理pull request的时候，需要审核提交者的修改是否正确，只接受正确的更改。
 
  ==================
-| wjl8026/JS-Demos | ---fork��clone��������push��github---> Aͬѧ�����
+| wjl8026/JS-Demos | ---fork，或clone到本地再push到github---> A同学代码库
  ==================                                             |
                                                                 |
                                                     ------------------------
@@ -22,25 +22,25 @@ counter.html�޸ģ�������ʼ��ʱ���͡�ֹͣ��ʱ�����ܺϲ���һ����ť�ϡ�����ҳ�ϸ�ֻ
                                                   fork         fork        fork
                                                    |            |           |
                                                    V            V           V
-                                              Bͬѧ�����  Cͬѧ�����  Dͬѧ�����
+                                              B同学代码库  C同学代码库  D同学代码库
 
                                       
                                          A   
-Bͬѧ�����  -----pull request----->     ͬ  
-                                         ѧ  
-Cͬѧ�����  -----pull request----->     ��  
-                                         ��  
-Dͬѧ�����  -----pull request----->     ��  
-                                         ��  
+B同学代码库  -----pull request----->     同  
+                                         学  
+C同学代码库  -----pull request----->     的  
+                                         代  
+D同学代码库  -----pull request----->     码  
+                                         库  
 
-��Aͬѧ�����ٷ���pull request��wjl8026/JS-Demos��
-
-
+（A同学无须再发送pull request到wjl8026/JS-Demos）
 
 
 
 
-���������ϰ�󣬿ɳ���������ͬʱ�޸�һ���ļ�������B��Cͬʱ���޸�clock.html����ʱ���ܻᵼ��merge��ͻ��
+
+
+完成以上练习后，可尝试两个人同时修改一个文件，例如B和C同时来修改clock.html。此时可能会导致merge冲突。
 
 
 
