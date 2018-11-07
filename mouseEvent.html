@@ -3,20 +3,29 @@
 <script type="text/javascript">
 function mouseOver()
 {
-document.getElementById("p1").innerHTML = "点击头像跳转至浙江工商大学";
+document.getElementById("p2").innerHTML = "点击头像跳转至浙江工商大学";
 }
 function mouseOut()
 {
 document.getElementById("p1").innerHTML = "";
 }
+function onClick()
+{
+window.location.href="http://www.hzic.edu.cn/";
+}
 </script>
+<style type="text/css">
+ img:hover{
+  transform: scale(1.5);
+}
+</style>
 </head>
 
 <body style="text-align:center">
 <br>
 <p style="font-weight:bold">请将鼠标移到头像上</p>
 <br>
-<img style="cursor:pointer" src="imgs/eg_mouse.png" onmouseover="mouseOver()" onmouseout="mouseOut()" />
+<img style="cursor:pointer" src="imgs/eg_mouse.png" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="onClick()" id="p2"/>
 <p style="cursor:pointer" id="p1"></p>
 </body>
 </html>
